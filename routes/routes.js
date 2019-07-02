@@ -37,16 +37,16 @@ var appRouter = function (app) {
        })
     });
 
-    app.get("/:id", function(req, res) {
-        api.get(`/brands/${req.param.id}`)
-        .then((response) => {
-            let responseData = { response };
-            res.status(200).json(responseData);
-        })
-        .catch((err) => {
-            console.log(err)
-        })
-    });
+    // app.get("/:id", function(req, res) {
+    //     api.get(`/brands/${req.param.id}`)
+    //     .then((response) => {
+    //         let responseData = { response };
+    //         res.status(200).json(responseData);
+    //     })
+    //     .catch((err) => {
+    //         console.log(err)
+    //     })
+    // });
 
 };
 
